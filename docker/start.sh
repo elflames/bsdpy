@@ -1,7 +1,7 @@
 #!/bin/bash
 # /usr/local/bin/nfs-client
 sleep 2
-service nginx start
+systemctl start nginx
 /usr/sbin/in.tftpd -l --permissive /nbi
 cd /bsdpy
 git pull
